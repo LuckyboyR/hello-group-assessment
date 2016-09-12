@@ -75,7 +75,7 @@ public class PMManagementFragment extends Fragment implements OnClickListener, O
 
 		if (v == this.addButton) {
 			this.addItems(this.editText1.getText().toString());
-			
+
 			Log.d("Insert: ", "Inserting ..");
 			db.addItem(new Item(this.editText1.getText().toString()));
 
@@ -87,10 +87,10 @@ public class PMManagementFragment extends Fragment implements OnClickListener, O
 				Log.d("Name: ", log);
 
 			}
-			if (v == this.resetButton) {
-				itemList.clear();
-				itemList.notifyDataSetChanged();
-			}
+		}
+		if (v == this.resetButton) {
+			itemList.clear();
+			itemList.notifyDataSetChanged();
 		}
 
 	}
